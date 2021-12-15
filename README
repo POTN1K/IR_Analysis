@@ -1,0 +1,19 @@
+# Project designed by Nikolaus Ricker and Joachim Bron Jacobs
+## Dec. 15th, 2021
+
+This project has as an objective to analyze a set of infrared images to approximate the transition line in an airfoil.
+
+Main runs the program, though it includes only some of the main functions. Other parts were temporary, such as saving certain files.
+
+The methods in each file are:
+*importCSV has functions to import files, convert into readable input, save files, etc.
+*analysis normalizes values, creates images and revises for transition line
+*Generate_graphs takes array input, corrects it and shows appropriate figures
+
+A sample of the results obtained is in directory results. It is the analysis for 3 degress angle of attack of a 3d wing,
+process which was repeated from 0-18 degrees in both 2d and 3d.
+
+First unprocessed data is available for comparison, then process, then averaged and normalized, then turned into image,
+afterwards, the image is used to find the line, ending with the points of transition and a plot for clearer visualization.
+
+This was a project done for TU Delft Aerospace Engineering Bachelor. The subject is Low-Speed Wind Tunnel Testing.
