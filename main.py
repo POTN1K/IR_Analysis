@@ -9,7 +9,7 @@ from analysis import *
 from generate_graphs import *
 
 # Paths
-pathdir3d = r"C:\Users\ricke\Desktop\IR_data\3d_csv"
+pathdir3d = r".\IR_data\3d_csv"
 
 # Transform original directory with files in wrong position to correct files
 # Uncomment if first time
