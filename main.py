@@ -1,3 +1,7 @@
+"""Infrared Analysis for Wind Tunnel Testing
+    Program designed by Nikolaus Ricker and Joachim Bron Jacobs
+    Dec. 15th, 2021"""
+
 # Main directory to call for functions
 
 # Imports
@@ -11,12 +15,12 @@ from generate_graphs import *
 # Paths
 pathdir2d = r".\Desktop\IR_data\2d_csv"
 
-# Transform original directory with files in wrong position to correct files
 # Uncomment if first time
-# Correctdir(pathdir3d)
 
-# Import files and analyse them
-# norm_df = AnalysisAoA(pathdir3d)
+# # Transform original directory with files in wrong position to correct files
+# Correctdir(pathdir2d)
+# # Import files and analyse them
+# norm_df = AnalysisAoA(pathdir2d)
 
 # Analyse through images the transition line
 list_2d = []

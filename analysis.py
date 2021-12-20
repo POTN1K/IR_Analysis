@@ -28,7 +28,8 @@ def showImage(df, aoa, twoDorthreeD):
     image = Image.fromarray(df.to_numpy())
     plt.imshow(image)
     plt.axis('off')
-    plt.title('IR image of ' + str(twoDorthreeD) + ' wing at aoa = ' + str(aoa) + ' [deg]')
+    plt.title('IR image of ' + str(twoDorthreeD) +
+              ' wing at aoa = ' + str(aoa) + ' [deg]')
     plt.show()
 
 
@@ -37,7 +38,8 @@ def saveImage(df, aoa, twoDorthreeD, path):
     image = Image.fromarray(df.to_numpy())
     plt.imshow(image)
     plt.axis('off')
-    plt.title('IR image of ' + str(twoDorthreeD) + ' wing at aoa = ' + str(aoa) + ' [deg]')
+    plt.title('IR image of ' + str(twoDorthreeD) +
+              ' wing at aoa = ' + str(aoa) + ' [deg]')
     plt.savefig(path)
 
 

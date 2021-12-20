@@ -8,7 +8,7 @@ Main runs the program, though it includes only some of the main functions. Other
 The methods in each file are:
 *importCSV has functions to import files, convert into readable input, save files, etc.
 *analysis normalizes values, creates images and revises for transition line
-*Generate_graphs takes array input, corrects it and shows appropriate figures
+*generate_graphs takes array input, corrects it and shows appropriate figures
 
 A sample of the results obtained is in directory results. It is the analysis for 3 degress angle of attack of a 3d wing,
 process which was repeated from 0-18 degrees in both 2d and 3d.
