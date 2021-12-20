@@ -9,25 +9,25 @@ from analysis import *
 from generate_graphs import *
 
 # Paths
-pathdir3d = r".\IR_data\3d_csv"
+pathdir2d = r".\Desktop\IR_data\2d_csv"
 
 # Transform original directory with files in wrong position to correct files
 # Uncomment if first time
 # Correctdir(pathdir3d)
 
 # Import files and analyse them
-norm_df = AnalysisAoA(pathdir3d)
+# norm_df = AnalysisAoA(pathdir3d)
 
 # Analyse through images the transition line
-list_3d = []
-for file in os.listdir(pathdir3d):
+list_2d = []
+for file in os.listdir(pathdir2d):
     # Goes through each file
-    path = pathdir3d + '\\' + file
+    path = pathdir2d + '\\' + file
     # Designs the transition line
-    TransitionLine(path, list_3d)
+    TransitionLine(path, list_2d)
 # Arranges the points considering hysteresis
-arr_3d = arrangeList(list_3d)
+arr_2d = arrangeList(list_2d)
 # Plots transition points
-arr_3d_correct = correct_array_for_chord(arr_3d)
-arr2CSV(arr_3d_correct, '3d')
-get_graph(arr_3d_correct, '3D')
+arr_2d_correct = correct_array_for_chord(arr_2d)
+arr2CSV(arr_2d_correct, '2d')
+get_graph(arr_2d_correct, '2D')

@@ -58,7 +58,7 @@ def AnalyseAoAImage(pathdir):
     else:
         d = '3D'
     df = AnalysisAoA(pathdir)
-    saveloc = r".\IR_data\3d_Images" + '\\AoA_' + AoA + '.png'
+    saveloc = r".\Desktop\IR_data\3d_Images" + '\\AoA_' + AoA + '.png'
     saveImage(df, AoA, d, saveloc)
 
 
@@ -110,7 +110,7 @@ def TransitionLine(path, list_):
 
     def buttonclick(val):
         """Effect of clicking button"""
-        savepath = r".\IR_data\\" + type + "_line\\" + aoa + '.png'
+        savepath = r".\Desktop\IR_data\\" + type + "_line\\" + aoa + '.png'
         plt.savefig(savepath, pad_inches=0, bbox_inches=Bbox([[2.25, 1], [4.25, 4.5]]))
         plt.close()
 

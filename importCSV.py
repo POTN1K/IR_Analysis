@@ -76,5 +76,5 @@ def importCSVfile(path):
 
 
 def arr2CSV(arr, type):
-    path = r"C:\Users\ricke\Desktop\IR_data" + '\\' + type + 'transition.csv'
+    path = r".\Desktop\IR_data" + '\\' + type + 'transition.csv'
     np.savetxt(path, arr)
